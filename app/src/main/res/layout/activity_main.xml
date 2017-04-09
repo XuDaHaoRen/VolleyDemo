@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="activity.xbl.com.volleydemo.MainActivity">
+
+    <Button
+        android:id="@+id/string_request_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="StringRequest 的使用"
+        />
+    <Button
+        android:id="@+id/json_request_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="jsonRequest 的使用"
+        />
+    <Button
+        android:id="@+id/show_image_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下载图片的使用"
+        />
+    <Button
+        android:id="@+id/my_request_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="定义一个属于自己的request"
+        />
+    <Button
+        android:id="@+id/image_loader_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用ImageLoader加载图片"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/request_image_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <com.android.volley.toolbox.NetworkImageView
+            android:layout_weight="1"
+            android:id="@+id/netwok_image_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/image_loader_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>
